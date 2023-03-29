@@ -1,0 +1,60 @@
+2023/03/29-08:43:03.729 37fc Reusing MANIFEST C:\Users\vinic\OneDrive\Documentos\Projetos\wpp-bot\whatsapp-bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/03/29-08:43:03.730 37fc Recovering log #650
+2023/03/29-08:43:03.733 37fc Reusing old log C:\Users\vinic\OneDrive\Documentos\Projetos\wpp-bot\whatsapp-bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000650.log 
+2023/03/29-08:43:03.733 37fc Delete type=2 #647
+2023/03/29-08:43:03.733 37fc Delete type=2 #648
+2023/03/29-08:43:03.733 37fc Delete type=2 #651
+2023/03/29-08:43:06.683 16f8 Compacting 1@1 + 10@2 files
+2023/03/29-08:43:06.810 16f8 Generated table #656@1: 20561 keys, 2210618 bytes
+2023/03/29-08:43:06.872 16f8 Generated table #657@1: 2941 keys, 2163341 bytes
+2023/03/29-08:43:06.935 16f8 Generated table #658@1: 4102 keys, 2163036 bytes
+2023/03/29-08:43:07.005 16f8 Generated table #659@1: 3748 keys, 2168738 bytes
+2023/03/29-08:43:07.068 16f8 Generated table #660@1: 2960 keys, 2157693 bytes
+2023/03/29-08:43:07.145 16f8 Generated table #661@1: 3744 keys, 2158063 bytes
+2023/03/29-08:43:07.210 16f8 Generated table #662@1: 3195 keys, 2163962 bytes
+2023/03/29-08:43:07.277 16f8 Generated table #663@1: 3357 keys, 2164895 bytes
+2023/03/29-08:43:07.328 16f8 Generated table #664@1: 3776 keys, 2157053 bytes
+2023/03/29-08:43:07.404 16f8 Generated table #665@1: 4728 keys, 2158087 bytes
+2023/03/29-08:43:07.449 16f8 Generated table #666@1: 3192 keys, 1612228 bytes
+2023/03/29-08:43:07.449 16f8 Compacted 1@1 + 10@2 files => 23277714 bytes
+2023/03/29-08:43:07.450 16f8 compacted to: files[ 0 2 23 0 0 0 0 ]
+2023/03/29-08:43:07.451 16f8 Delete type=2 #618
+2023/03/29-08:43:07.451 16f8 Delete type=2 #619
+2023/03/29-08:43:07.451 16f8 Delete type=2 #620
+2023/03/29-08:43:07.451 16f8 Delete type=2 #621
+2023/03/29-08:43:07.452 16f8 Delete type=2 #622
+2023/03/29-08:43:07.452 16f8 Delete type=2 #623
+2023/03/29-08:43:07.452 16f8 Delete type=2 #624
+2023/03/29-08:43:07.452 16f8 Delete type=2 #625
+2023/03/29-08:43:07.452 16f8 Delete type=2 #626
+2023/03/29-08:43:07.452 16f8 Delete type=2 #627
+2023/03/29-08:43:07.452 16f8 Delete type=2 #652
+2023/03/29-08:43:17.060 16f8 Compacting 1@1 + 10@2 files
+2023/03/29-08:43:17.220 16f8 Generated table #667@1: 4724 keys, 2163982 bytes
+2023/03/29-08:43:17.322 16f8 Generated table #668@1: 5473 keys, 2166771 bytes
+2023/03/29-08:43:17.481 16f8 Generated table #669@1: 44927 keys, 2217807 bytes
+2023/03/29-08:43:17.715 16f8 Generated table #670@1: 27008 keys, 2273987 bytes
+2023/03/29-08:43:17.980 16f8 Generated table #671@1: 30334 keys, 2263548 bytes
+2023/03/29-08:43:18.147 16f8 Generated table #672@1: 26182 keys, 2272971 bytes
+2023/03/29-08:43:18.356 16f8 Generated table #673@1: 30841 keys, 2255528 bytes
+2023/03/29-08:43:18.520 16f8 Generated table #674@1: 28924 keys, 2259752 bytes
+2023/03/29-08:43:18.723 16f8 Generated table #675@1: 90355 keys, 2295367 bytes
+2023/03/29-08:43:18.829 16f8 Generated table #676@1: 37260 keys, 2201262 bytes
+2023/03/29-08:43:18.866 16f8 Generated table #677@1: 16863 keys, 386705 bytes
+2023/03/29-08:43:18.866 16f8 Compacted 1@1 + 10@2 files => 22757680 bytes
+2023/03/29-08:43:18.867 16f8 compacted to: files[ 0 1 24 0 0 0 0 ]
+2023/03/29-08:43:18.867 16f8 Delete type=2 #592
+2023/03/29-08:43:18.867 16f8 Delete type=2 #628
+2023/03/29-08:43:18.867 16f8 Delete type=2 #633
+2023/03/29-08:43:18.867 16f8 Delete type=2 #634
+2023/03/29-08:43:18.867 16f8 Delete type=2 #635
+2023/03/29-08:43:18.867 16f8 Delete type=2 #638
+2023/03/29-08:43:18.868 16f8 Delete type=2 #639
+2023/03/29-08:43:18.868 16f8 Delete type=2 #640
+2023/03/29-08:43:18.868 16f8 Delete type=2 #641
+2023/03/29-08:43:18.868 16f8 Delete type=2 #644
+2023/03/29-08:43:18.868 16f8 Delete type=2 #653
+2023/03/29-08:43:24.775 3b5c Compacting 1@1 + 1@2 files
+2023/03/29-08:43:25.132 3b5c Generated table #678@1: 99050 keys, 2249601 bytes
+2023/03/29-08:43:25.132 3b5c Compacted 1@1 + 1@2 files => 2249601 bytes
+2023/03/29-08:43:25.133 3b5c compacted to: files[ 0 0 24 0 0 0 0 ]

@@ -1,0 +1,12 @@
+2023/03/29-08:42:47.496 a24 Reusing MANIFEST C:\Users\vinic\OneDrive\Documentos\Projetos\wpp-bot\whatsapp-bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/03/29-08:42:47.497 a24 Recovering log #642
+2023/03/29-08:42:47.890 a24 Reusing old log C:\Users\vinic\OneDrive\Documentos\Projetos\wpp-bot\whatsapp-bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000642.log 
+2023/03/29-08:42:48.015 3510 Level-0 table #651: started
+2023/03/29-08:42:48.086 3510 Level-0 table #651: 1104556 bytes OK
+2023/03/29-08:42:48.091 3510 Delete type=0 #642
+2023/03/29-08:42:49.490 1d58 Compacting 1@0 + 2@1 files
+2023/03/29-08:42:49.767 1d58 Generated table #652@0: 38017 keys, 1873818 bytes
+2023/03/29-08:42:49.906 1d58 Generated table #653@0: 12911 keys, 1025685 bytes
+2023/03/29-08:42:49.923 1d58 Generated table #654@0: 65 keys, 1410 bytes
+2023/03/29-08:42:49.923 1d58 Compacted 1@0 + 2@1 files => 2900913 bytes
+2023/03/29-08:42:49.924 1d58 compacted to: files[ 0 3 22 0 0 0 0 ]
