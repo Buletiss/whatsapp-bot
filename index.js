@@ -1,5 +1,17 @@
+const express = require('express')
+const app = express()
+const {Router} = require("express")
+const routes = Router()
 const qrcode = require('qrcode-terminal');
 
+app.use(express.json())
+app.use(routes)
+
+app.listen(3333, (error) => {
+  if(error) {
+    console.log("port error")
+  }
+})
 
 const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
 const client = new Client({
@@ -29,5 +41,6 @@ client.on('message_create', async (msg_create) => {
   console.log(msg_create.body)
 
   })
+
 
 client.initialize();
