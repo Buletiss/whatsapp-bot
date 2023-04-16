@@ -12,27 +12,13 @@ client.on('qr', qr => {
   });
 });
 
-
-
 client.on('ready', () => {
   console.log('Client Ready');
 });
 
-// async function sendMediaUrl() {
-//   const media = await MessageMedia.fromUrl("https://picsum.photos/200/300")
-//   return media
-// }
+client.on('message_create', async (msg_create) => {
+  console.log(msg_create.body)
 
-// const media = await MessageMedia.fromUrl("https://picsum.photos/200/300")
-
-const text = 'Teste';
-
-client.on('message', message => {
-  console.log(message.body);
-  if (message.body == message.body) {
-    console.log('wpp msg: ', message.from);
-    client.sendMessage(message.from, text);
-  }
-});
+  })
 
 client.initialize();
