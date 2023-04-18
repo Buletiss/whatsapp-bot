@@ -48,8 +48,9 @@ routes.post('/', async (req, res) => {
     model: 'text-davinci-003',
     prompt: 'Bom dia ChatGPT',
   });
-  let texto = console.log(completion.data.choices[0].text);
-  return res.json({ message: texto });
+  console.log(completion.data.choices[0].text);
+  let texto = completion.data.choices[0].text;
+  return res.json(texto);
 });
 
 app.listen(3333, error => {
