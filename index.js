@@ -9,12 +9,6 @@ require('dotenv').config();
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333, error => {
-  if (error) {
-    console.log('port error');
-  }
-});
-
 //wpp web confi
 const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
 const client = new Client({
@@ -48,4 +42,18 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-const response = openai.listEngines();
+
+routes.post('/', async (req, res) => {
+  const completion = await openai.createCompletion({
+    model: 'text-davinci-003',
+    prompt: 'Bom dia ChatGPT',
+  });
+  let texto = console.log(completion.data.choices[0].text);
+  return res.json({ message: texto });
+});
+
+app.listen(3333, error => {
+  if (error) {
+    console.log('port error');
+  }
+});
