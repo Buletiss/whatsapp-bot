@@ -43,14 +43,37 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
+var msgTest = 'digite um codigo para soma de 3 numeros';
+
 routes.post('/', async (req, res) => {
   const completion = await openai.createCompletion({
     model: 'text-davinci-003',
-    prompt: 'Bom dia ChatGPT',
+    prompt: msgTest,
   });
   console.log(completion.data.choices[0].text);
   let texto = completion.data.choices[0].text;
   return res.json(texto);
+});
+
+async function responderPergunta(x) {
+  const completion = await openai.createCompletion({
+    model: 'text-davinci-003',
+    prompt: `${x}`,
+    max_tokens: 2000,
+  });
+  console.log(completion.data.choices[0].text);
+  let texto = completion.data.choices[0].text;
+  return texto;
+}
+
+const groupID = '120363145584795595@g.us';
+
+client.on('message', async message => {
+  console.log(`Msg from:${message.from} : ${message.body}`);
+  if (message.from == groupID) {
+    const resposta = await responderPergunta(message.body);
+    client.sendMessage(message.from, `${resposta}`);
+  }
 });
 
 app.listen(3333, error => {
