@@ -44,16 +44,37 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 //função de resposta do openAI
-async function responderPergunta(x) {
+async function responderPergunta(promptResponse) {
   const completion = await openai.createCompletion({
     model: 'text-davinci-003',
-    prompt: `${x}`,
+    prompt: `${promptResponse}`,
     max_tokens: 2000,
+    temperature: 0.8,
   });
   console.log(completion.data.choices[0].text);
   let texto = completion.data.choices[0].text;
   return texto;
 }
+
+//função para criação de imagem
+async function gerarImagem(promptResponse) {
+  const response = await openai.createImage({
+    prompt: `${promptResponse}`,
+    n: 1,
+    size: '1024x1024',
+  });
+  // console.log(responsea);
+  const image_url = response.data.data[0].url;
+  return image_url;
+}
+
+//rota para gerar imagem(apenas teste)
+routes.post('/image', async (req, res) => {
+  const { image } = req.body;
+  const response = await gerarImagem(image);
+  // console.log('console log reponse: ', response);
+  return res.json(response);
+});
 
 //rota para pergunte(apenas um teste para o envio de mensagem)
 routes.post('/', async (req, res) => {
@@ -67,18 +88,30 @@ routes.post('/', async (req, res) => {
   }
 });
 
-const groupID = '5511975812099-1634147649@g.us';
+const cariocaGrupo = '5511975812099-1634147649@g.us';
 const groupIdTeste = '120363145584795595@g.us';
+const biaId = '5513998014524@c.us';
 
 client.on('message', async message => {
-  console.log(`Msg from:${message.from} : ${message.body}`);
-  if (message.body.substring(0, 4) == '-gpt') {
-    console.log('console log if group: ', message.body);
-    // const resposta = await responderPergunta(message.body);
-    // client.sendMessage(message.from, `${resposta}`);
-  } else {
-    console.log('else if');
+  // console.log(`Msg from:${message.from} : ${message.body}`);
+  // if (message.body.substring(0, 4) == '-gpt') {
+  // console.log('console log if group: ', message.body);
+  //   const resposta = await responderPergunta(message.body);
+  //   client.sendMessage(message.from, resposta);
+});
+
+client.on('message', async message => {
+  const response = await MessageMedia.fromUrl(await gerarImagem(message.body));
+  try {
+    if (
+      message.from == groupIdTeste &&
+      message.body.substring(0, 6) == '-imgpt'
+    )
+      console.log(response);
+  } catch (error) {
+    console.log('erro ao gerar imagem');
   }
+  // console.log(response);
 });
 
 app.listen(3333, error => {
